@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DesktopClient.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class DesktopClientTest
     {
         [TestMethod]
         public void TestMethod1()
