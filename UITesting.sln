@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopClient.Test", "Deskt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopClient.FlaUITest", "DesktopClient.FlaUITest\DesktopClient.FlaUITest.csproj", "{FBC7D106-2685-4309-8B5E-562B1F74E4BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopClient.CodedUITest", "DesktopClient.CodedUITest\DesktopClient.CodedUITest.csproj", "{6EF4E7A9-35E5-41B6-8B08-403CD6A26576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FBC7D106-2685-4309-8B5E-562B1F74E4BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBC7D106-2685-4309-8B5E-562B1F74E4BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBC7D106-2685-4309-8B5E-562B1F74E4BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF4E7A9-35E5-41B6-8B08-403CD6A26576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF4E7A9-35E5-41B6-8B08-403CD6A26576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF4E7A9-35E5-41B6-8B08-403CD6A26576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF4E7A9-35E5-41B6-8B08-403CD6A26576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

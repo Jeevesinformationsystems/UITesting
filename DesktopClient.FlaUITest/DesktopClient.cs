@@ -22,7 +22,7 @@ namespace DesktopClient.Test
 
 
         [TestMethod]
-        public void Login()
+        public void FlaUILogin()
         {
             using (var automation = new UIA3Automation())
             {
