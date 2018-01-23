@@ -29,7 +29,7 @@ namespace DesktopClient.CodedUITest
 
             //Playback.PlaybackSettings.SmartMatchOptions = SmartMatchOptions.None;
             //Playback.Initialize();
-            //var appDirectory = @"C:\tfs\jvsoutalm01\JeevesERP\JeevesPlatform\Kernel\R5\5.1SP_List\Source\app\Jeeves.WPF.Client\bin\Release\";
+            //var appDirectory = @"C:\tfs\JeevesTFS\Jeeves\Kernel\Feature\5.1SP_List\Source\app\Jeeves.WPF.Client\bin\Release\";
             //application = ApplicationUnderTest.Launch(Path.Combine(appDirectory, "Jeeves.WPF.Client.exe"), "");
         }
 
@@ -52,7 +52,7 @@ namespace DesktopClient.CodedUITest
 
             Playback.PlaybackSettings.SmartMatchOptions = SmartMatchOptions.None;
             //Playback.Initialize();
-            var appDirectory = @"C:\tfs\jvsoutalm01\JeevesERP\JeevesPlatform\Kernel\R5\5.1SP_List\Source\app\Jeeves.WPF.Client\bin\Release\";
+            var appDirectory = @"C:\tfs\JeevesTFS\Jeeves\Kernel\Feature\5.1SP_List\Source\app\Jeeves.WPF.Client\bin\Release\";
             var application = ApplicationUnderTest.Launch(Path.Combine(appDirectory, "Jeeves.WPF.Client.exe"), "");
 
 
@@ -60,6 +60,9 @@ namespace DesktopClient.CodedUITest
             var UIPasswordTextBoxEdit = new WpfEdit(application);
             var UISignatureTextBoxEdit = new WpfEdit(application);
             var UIOKButton = new WpfButton(application);
+            var programbutton = new WpfText(application);
+            var openprogram = new WpfEdit(application);
+
 
             UIUserTextBoxEdit.SearchProperties[WpfControl.PropertyNames.AutomationId] = "UserTextBox";
             UIUserTextBoxEdit.Text = "sa";
@@ -72,6 +75,13 @@ namespace DesktopClient.CodedUITest
 
             UIOKButton.SearchProperties[WpfControl.PropertyNames.AutomationId] = "OKButton";
             Mouse.Click(UIOKButton);
+
+            programbutton.SearchProperties[WpfControl.PropertyNames.AutomationId] = "NavigationBarPrograms";
+            Mouse.Click(programbutton);
+
+            openprogram.SearchProperties[WpfControl.PropertyNames.AutomationId] = "OpenProgramTextBox";
+            Keyboard.SendKeys(openprogram, "order1");
+            Keyboard.SendKeys(openprogram, "{Enter}");
         }
         
         [ClassCleanup]
